@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link id="css_t" rel="stylesheet" type="text/css" href="textures/main.css">
+	<title>Gradessup</title>
+</head>
+
+<body scroll="no" style="overflow: hidden">
+	<div class="dropdown">
+		<div class="inner">
+				<p class="icon">i</p>
+				<a href="#" onclick="changeCSS('textures/spring.css', 0);">Spring</a>
+  			<a href="#" onclick="changeCSS('textures/summer.css', 0);">Summer</a>
+  			<a href="#" onclick="changeCSS('textures/fall.css', 0);">Fall</a>
+				<a href="#" onclick="changeCSS('textures/winter.css', 0);">Winter</a>
+		</div>
+	</div>
+
+	<div id="stars" class="stars" aria-hidden="true">
+		<img src="textures/stars.png">
+	</div>
+
+	<div id="snowflakes" class="snowflakes" aria-hidden="true">
+  	<div class="snowflake">
+  		⚪
+  	</div>
+  	<div class="snowflake">
+  		⚪
+  	</div>
+  	<div class="snowflake">
+  		⚪
+  	</div>
+  	<div class="snowflake">
+  		⚪
+  	</div>
+  	<div class="snowflake">
+  		⚪
+  	</div>
+  	<div class="snowflake">
+  		⚪
+  	</div>
+  	<div class="snowflake">
+    	⚪
+  	</div>
+  	<div class="snowflake">
+    	⚪
+  	</div>
+  	<div class="snowflake">
+    	⚪
+  	</div>
+  	<div class="snowflake">
+    	⚪
+  	</div>
+  	<div class="snowflake">
+    	⚪
+  	</div>
+  	<div class="snowflake">
+    	⚪
+  	</div>
+</div>
+
+	<div class="foreground">
+	<h1>Gradessup</h1>
+	<p id="instruction"> Put your grades in with the help of the buttons! </p>
+	<div class="grades_btngroup" style="width:100%">
+
+	<button id="a" onclick="appGrades(5)">A</button>
+	<button id="b" onclick="appGrades(4)">B</button>
+	<button id="c" onclick="appGrades(3)">C</button>
+	<button id="d" onclick="appGrades(2)">D</button>
+	<button id="f" onclick="appGrades(1)">F</button>
+
+	</div>
+
+	<div class="actions_btngroup" style="width:100%">
+
+	<button id="done" onclick="done()">Done</button>
+	<button id="reset" onclick="reset()">Reset</button>
+	<button class="backspace" id="backspace" onclick="backspace()" disabled>Delete last digit</button>
+	<p id="gradesnow"> Your current grades: </p>
+	<p id="average"> Your current average: </p>
+
+	</div>
+
+	<script src="grades.js"></script>
+
+	</div>
+
+	<div class="langbut">
+		<button class="lang" id="lang" onclick="language()"></button>
+	</div>
+
+</body>
+
+</html>

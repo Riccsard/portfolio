@@ -1,0 +1,482 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  background-color: #2e3131;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.circlehead {
+  position: absolute;
+  width: 15vh;
+  height: 15vh;
+  top: 65vh;
+  left: 1.5vh;
+  background-image: url("circlepic.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  clip-path: circle(45%);
+  transition: all .3s ease-in;
+  overflow: auto;
+}
+
+.aboutmeshort {
+  position: absolute;
+  background-color: #fff;
+  width: 35vh;
+  height: 13vh;
+  top: 66vh;
+  left: 8vh;
+  z-index: 1;
+  clip-path: circle(0% at 0% 50%);
+  transition: .5s;
+  border: none;
+  border-radius: 15px;
+}
+
+.circlehead:hover + .aboutmeshort{
+  clip-path: circle(100%);
+}
+
+.circlehead:hover {
+  clip-path: circle(100%);
+}
+
+.aboutmeshort p{
+  position: relative;
+  left: 10vh;
+  width: 60%;
+}
+
+.home-background {
+  position: absolute;
+  width:100%;
+  height: 99%;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px);
+  z-index: 0;
+}
+
+.profile{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 2;
+  text-align: right;
+  color: #707070;
+}
+
+.profile .name {
+  position: relative;
+  font-size: 10vh;
+}
+
+.profile .work {
+  position: absolute;
+  font-size: 5vh;
+  top: 50%;
+  right: 0%;
+}
+
+.parent .hamb {
+  position: absolute;
+  z-index: 4;
+  width: 6vh;
+  height: 6vh;
+  text-align: center;
+  top: 0%;
+  right: 0%;
+}
+
+.parent .hambtopline {
+  position: absolute;
+  height: 7%;
+  width: 60%;
+  top: 36.25%;
+  left: 20%;
+  border-radius: 4px;
+  background-color: #707070;
+  z-index: 4;
+  transition: .1s;
+}
+
+.parent .hambcenterline {
+  position: absolute;
+  height: 7%;
+  width: 80%;
+  top: 50%;
+  right: 10%;
+  border-radius: 4px;
+  background-color: #707070;
+  z-index: 4;
+  transition: .1s;
+}
+
+.parent .hambbotline {
+  position: absolute;
+  height: 7%;
+  width: 60%;
+  top: 63.75%;
+  left: 20%;
+  border-radius: 4px;
+  background-color: #707070;
+  z-index: 4;
+  transition: .1s;
+}
+
+.hamb:hover .hambtopline {
+  width: 80%;
+  left: 10%;
+}
+
+.hamb:hover .hambcenterline {
+  width: 60%;
+  left: 20%;
+}
+
+.hamb:hover .hambbotline {
+  width: 80%;
+  left: 10%;
+}
+
+.nameline {
+  position: absolute;
+  top: 10vh;
+  right: -4%;
+  height: 18vh;
+  width: 0.8vh;
+  background-color: #707070;
+}
+
+.header {
+  margin: 0;
+}
+
+.parent {
+  width: 100%;
+  height: 82vh;
+  text-align: center;
+  z-index: 1;
+}
+
+.toolbar {
+  top: 0%;
+  left: 0%;
+  height: 6vh;
+  width: 100%;
+  box-shadow: 1px 1px;
+  position: sticky;
+  display: block;
+  background-color: #f2f1ef;
+  z-index: 3;
+}
+
+.toolbar button {
+  height: 1.8em;
+  width: 7em;
+  background-color: #f2f1ef;
+  box-shadow: 0px 0px;
+  border: none;
+  border-radius: 20px;
+  color: #707070;
+  margin: 1.5vh;
+  position: absolute;
+  transition: 0.2s;
+  font-size: 1.7vh;
+}
+
+.toolbar img {
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  top: 0vh;
+  right: 2vh;
+  z-index: 50;
+}
+
+.toolbar button:hover {
+  background-color: #CECECE;
+}
+
+button:focus{
+  outline-color: #f2f1ef;
+}
+
+.home {
+  right: 29em;
+}
+
+.projects {
+  right: 21em;
+}
+
+.about {
+  right: 13em;
+}
+
+.contacts {
+  right: 5em;
+}
+
+.social {
+  background-color: #f2f1ef;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  bottom: 0vh;
+  height: 18vh;
+  width: 100%;
+  box-shadow: -1px -1px;
+  z-index: 0;
+}
+
+.social h1 {
+  font-size: 3.5vh;
+  padding: 0px 10px;
+  display: inline;
+  position: relative;
+  top: 7vh;
+  left: 1em;
+  color: #707070;
+  font-weight: normal;
+  border-top: 3px solid;
+  border-right: 3px solid;
+}
+
+.social a {
+  font-size: 2.5vh;
+  position: relative;
+  color: #707070;
+  font-weight: normal;
+  transition: .1s ease-in;
+}
+
+.social .twittertag {
+  position: absolute;
+  align-items: center;
+  top: 40%;
+  left: 15%;
+  transition: .3s;
+  text-align: center;
+  display: grid;
+  grid: auto;
+}
+
+.social .twittertag a{
+  float:left;
+  margin:0;
+}
+
+.social .twittertag .twtt {
+  float:left;
+  margin:0;
+  opacity: 0%;
+  transition: .3s;
+}
+
+.social .twittertag:hover {
+  top: 35%;
+}
+
+.social .twittertag:hover .twtt {
+  opacity: 100%;
+}
+
+.social .gittab {
+  position: absolute;
+  align-items: center;
+  top: 40%;
+  left: 25%;
+  transition: .3s;
+  text-align: center;
+  display: grid;
+  grid: auto;
+}
+
+.social .gittab a{
+  float:left;
+  margin:0;
+}
+
+.social .gittab .gttb {
+  float:left;
+  margin:0;
+  opacity: 0%;
+  transition: .3s;
+}
+
+.social .gittab:hover {
+  top: 35%;
+}
+
+.social .gittab:hover .gttb {
+  opacity: 100%;
+}
+
+.social .dribtag {
+  position: absolute;
+  align-items: center;
+  top: 40%;
+  left: 35%;
+  transition: .3s;
+  text-align: center;
+  display: grid;
+  grid: auto;
+}
+
+.social .dribtag a{
+  float:left;
+  margin:0;
+}
+
+.social .dribtag .dbtg {
+  float:left;
+  margin:0;
+  opacity: 0%;
+  transition: .3s;
+}
+
+.social .dribtag:hover {
+  top: 35%;
+}
+
+.social .dribtag:hover .dbtg {
+  opacity: 100%;
+}
+
+.social .thingtab {
+  position: absolute;
+  align-items: center;
+  top: 40%;
+  left: 45%;
+  transition: .3s;
+  text-align: center;
+  display: grid;
+  grid: auto;
+}
+
+.social .thingtab a{
+  float:left;
+  margin:0;
+}
+
+.social .thingtab .tngt {
+  float:left;
+  margin:0;
+  opacity: 0%;
+  transition: .3s;
+}
+
+.social .thingtab:hover {
+  top: 35%;
+}
+
+.social .thingtab:hover .tngt {
+  opacity: 100%;
+}
+
+.social p:hover{
+  cursor: default;
+}
+
+.twitter {
+  position: absolute;
+  top: -27%;
+  right: 0%;
+  clip-path: polygon(0 0, 100% 0, 100% 21%, 0 21%);
+  transition: .5s;
+  opacity: 80%;
+}
+
+.twitter:hover {
+  top: -122%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  opacity: 100%;
+}
+
+.projects-background {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background-image: url("bg2.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  filter: blur(5px) grayscale(1);
+  z-index: -1;
+}
+
+.gradessup {
+  position: absolute;
+  width: 36.5vh;
+  height: 18.25vh;
+  background-color: #c7c7c7;
+  bottom: -50vh;
+  left: 10%;
+  z-index: 4;
+  text-align: center;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.gradessup img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 36.5vh;
+  height: 18.25vh;
+  z-index: 5;
+  border-radius: 15px;
+  filter: grayscale();
+  transition: .3s;
+}
+
+.gradessup p {
+  position: absolute;
+  bottom: 0%;
+  margin: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.gradessup:hover {
+  height: 27.5vh;
+  bottom: -55vh;
+}
+
+.gradessup:hover img {
+  filter: none;
+}
+
+
+
+.contacts-page {
+  background-color: #f2f1ef;
+  position: absolute;
+  left: 0%;
+  bottom: -100%;
+  height: 18vh;
+  width: 100%;
+  box-shadow: -1px -1px;
+  z-index: 0;
+}
+
+.contacts-page h1 {
+  font-size: 3.5vh;
+  padding: 0px 10px;
+  display: inline;
+  position: relative;
+  top: 7vh;
+  left: 1em;
+  color: #707070;
+  font-weight: normal;
+}
