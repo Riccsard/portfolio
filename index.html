@@ -1,97 +1,67 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-
   <head>
-    <link rel="stylesheet" href="portfolio.css">
+    <title>Richard Szalai</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Whiskey</title>
-    <script type="text/javascript" src="portfolio.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
 
-<body>
-  <div class="wrapper">
-  <div class="circlehead">
-  </div>
+  <body>
 
-  <div class="aboutmeshort">
-    <p class="abtmsh">Yea, im kinda drunk in this pic. Need som whiskey :hearth: And yea luv coffee. And tea. Long live the caffeine!</p>
-  </div>
-
-  <div class="home-background">
-  </div>
-
-  <div class="profile">
-      <p class="name">Richard Szalai</p>
-      <p class="work">UX/UI Dev</p>
-      <div class="nameline">
-      </div>
-  </div>
-
-  <div class="parent">
-
-      <div class="toolbar">
-
-      <div class="buttons">
-          <button class="home">Home</button>
-          <button class="projects">Projects</button>
-          <button class="about">About me</button>
-          <button class="contacts">Contacts</button>
-
-        <div class="hamb" onclick="changeCSS('nightmode.css', 0);">
-          <div class="hambcenterline">
-          </div>
-          <div class="hambtopline">
-          </div>
-          <div class="hambbotline">
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-    <div class="social">
-      <h1>Social</h1>
-      <div class="twittertag">
-        <a href="https://twitter.com/riccsardz" target="_blank">Twitter</a>
-        <p class="twtt">@richardz</p>
-      </div>
-      <div class="gittab">
-        <a href="https://github.com/Riccsard" target="_blank">Github</a>
-        <p class="gttb">/Riccsard</p>
-      </div>
-      <div class="dribtag">
-        <a href="https://dribbble.com/Richardz" target="_blank">Dribbble</a>
-        <p class="dbtg">/Richardz</p>
-      </div>
-      <div class="thingtab">
-        <a href="https://www.thingiverse.com/Riccsard/" target="_blank">Thingiverse</a>
-        <p class="tngt">/Riccsard</p>
-      </div>
-
-      <div class="twitter">
-        <a class="twitter-timeline" data-lang="en" data-width="375" data-height="200" data-theme="dark" href="https://twitter.com/riccsardz?ref_src=twsrc%5Etfw">Tweets by @riccsardz</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-
+    <div id="background">
     </div>
 
-    <div class="projects-background">
+    <div id="bg-overlay">
+      <span id="name">Richard Szalai</span><br>
+      <span id="work">Ux/Ui Dev</span>
+    </div>
+
+    <div id="circlehead">
+    </div>
+
+    <div id="aboutmeshort">
+      <p id="abtmsh">Yea, im kinda drunk in this pic. Need som whiskey :hearth: And yea luv coffee. And tea. Long live the caffeine!</p>
     </div>
 
 
-    <div class="gradessup" onclick="window.open('https://xenodochial-kalam-2b7c4b.netlify.com/','mywindow');" style="cursor: pointer;">
-        <img src="grdsp.png">
-        <p>Gradessup<br>A quick application, intented to be used to assist with semester averages/grades. Coming as a mobile app soon TM.</p>
+    <div id="menu">
+      <span id="hamb" onclick="openNav()">&#9776;</span>
     </div>
 
-    <div class="contacts-page">
-      <h1>Majd lesz itt is valami</h1>
+    <div id="overlay">
+      <div id="overlay-content">
+        <a href="#">Social</a>
+        <a href="#">Projects</a>
+        <a href="#">About me</a>
+        <a href="#">Contact me</a>
+      </div>
     </div>
-  </div>
-</body>
+
+    <div id="backgroundtwo">
+    </div>
+
+    <div id="menutwo">
+      <span id="hambtwo" onclick="openProj()">&#9776;</span>
+    </div>
+
+    <div id="overlaytwo">
+      <div id="overlay-contenttwo">
+        <a href="#">Gradessup</a>
+        <a href="#">KnowYourDrinks</a>
+        <a href="#">Functions</a>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div id="gradessup" onclick="window.open('https://xenodochial-kalam-2b7c4b.netlify.com/','mywindow');" style="cursor: pointer;">
+          <img src="grdsp.png">
+          <p>Gradessup<br>A quick application, intented to be used to assist with semester averages/grades. Coming as a mobile app soon TM.</p>
+      </div>
+    </div>
+
+  </body>
 
 </html>
