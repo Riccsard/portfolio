@@ -9,6 +9,7 @@ function closeNav() {
   document.getElementById("overlay").style.height = "0%";
   document.getElementById("hamb").setAttribute('onclick', 'openNav()');
   document.getElementById("hamb").innerHTML = "&#9776;";
+  document.getElementById("social").style.right = "-100%";
 }
 
 
@@ -23,4 +24,9 @@ function closeProj() {
   document.getElementById("overlaytwo").style.height = "0%";
   document.getElementById("hambtwo").setAttribute('onclick', 'openProj()');
   document.getElementById("hambtwo").innerHTML = "&#9776;";
+}
+
+
+function social() {
+  document.getElementById("social").style.right = "5%";
 }

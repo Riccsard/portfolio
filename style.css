@@ -4,6 +4,31 @@ $dark-grey: #707070
 $white: #f5f6fa
 */
 
+#social input[type=text], input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+}
+
+#social button {
+  background-color: #DBC1AC;
+  color: white;
+  font-size: 20px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 423%;
+}
+
+#social button:hover {
+  opacity: 0.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   align-items: center;
@@ -128,6 +153,54 @@ body::-webkit-scrollbar {
   border-radius: 15px;
 }
 
+#social {
+  position: absolute;
+  width: 40vh;
+  height: 70vh;
+  right: -100%;
+  top: 10%;
+  border-radius: 3%;
+  background-color: #634832;
+  z-index: 3;
+}
+
+#social p {
+  font-size: 2vh;
+  padding: 1.3vh 0vh;
+  position: relative;
+  left: 8vh;
+  color: #DBC1AC;
+}
+
+#social div {
+  margin-top: 40px;
+  margin-left: 20px;
+  background-size: cover;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  top: 1vh;
+  left: 1vh;
+}
+
+#twittericon {
+  background-image: url("twitter.png");
+  background-size: cover;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  top: 1vh;
+  left: 1vh;
+}
+
+#phoneicon {
+  background-image: url("phone.png");
+}
+
+#mailicon {
+  background-image: url("mail.png");
+}
+
 #circlehead:hover + #aboutmeshort{
   clip-path: circle(100%);
 }
@@ -211,17 +284,15 @@ body::-webkit-scrollbar {
 #projects {
   position: absolute;
   top: 135%;
-  width: 80%;
+  width: 100%;
   height: 18.25%;
   /*background-color: black;*/
   display: grid;
   grid-column: auto;
   align-self: center;
   margin: 0;
-  transform: translate(10%, 0%);
   align-items: center;
   text-align: center;
-
 }
 
 #gradessup {
@@ -229,7 +300,7 @@ body::-webkit-scrollbar {
   width: 36.5vh;
   height: 18.25vh;
   background-color: #c7c7c7;
-  z-index: 4;
+  z-index: 0;
   text-align: center;
   border-radius: 15px;
   transition: .3s;
