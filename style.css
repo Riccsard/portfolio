@@ -98,13 +98,22 @@ body::-webkit-scrollbar {
 
 #background {
   position: absolute;
-  width:100%;
+  width: 100%;
   height: 100%;
   background-image: url("bg.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(5px);
+  /*filter: blur(5px);*/
   z-index: 0;
+}
+
+#chromie {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 0%;
+  left: 0%;
+  z-index: 5;
 }
 
 #bg-overlay {
@@ -130,7 +139,7 @@ body::-webkit-scrollbar {
   height: 15vh;
   top: 74%;
   left: 1vh;
-  background-image: url("circlepic.png");
+  background-image: url("portrait.png");
   background-size: cover;
   background-position: center;
   z-index: 1;
@@ -151,54 +160,6 @@ body::-webkit-scrollbar {
   transition: .5s;
   border: none;
   border-radius: 15px;
-}
-
-#social {
-  position: absolute;
-  width: 40vh;
-  height: 70vh;
-  right: -100%;
-  top: 10%;
-  border-radius: 3%;
-  background-color: #634832;
-  z-index: 3;
-}
-
-#social p {
-  font-size: 2vh;
-  padding: 1.3vh 0vh;
-  position: relative;
-  left: 8vh;
-  color: #DBC1AC;
-}
-
-#social div {
-  margin-top: 40px;
-  margin-left: 20px;
-  background-size: cover;
-  position: relative;
-  height: 50px;
-  width: 50px;
-  top: 1vh;
-  left: 1vh;
-}
-
-#twittericon {
-  background-image: url("twitter.png");
-  background-size: cover;
-  position: relative;
-  height: 50px;
-  width: 50px;
-  top: 1vh;
-  left: 1vh;
-}
-
-#phoneicon {
-  background-image: url("phone.png");
-}
-
-#mailicon {
-  background-image: url("mail.png");
 }
 
 #circlehead:hover + #aboutmeshort{
@@ -364,7 +325,7 @@ body::-webkit-scrollbar {
   }
 
   #circlehead {
-    top: 65%;
+    top: 67%;
     left: 70%;
   }
 
